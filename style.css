@@ -1,52 +1,63 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f7f9fc;
+  background-color: #f4f6f8;
   color: #333;
 }
 
 header {
   background: linear-gradient(90deg, #007bff, #00c6ff);
   color: white;
+  padding: 40px 20px;
   text-align: center;
-  padding: 60px 20px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
 }
 
-h2 {
+nav a {
+  margin: 0 15px;
   color: #007bff;
-  margin-top: 40px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-section {
-  max-width: 800px;
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
+h2 {
+  color: #007bff;
+}
+
 .skills {
-  list-style: none;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .skills li {
-  background: #e0ecff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  color: #0056b3;
+  background-color: #dceeff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #004080;
 }
 
 footer {
-  text-align: center;
   background-color: #ddd;
+  text-align: center;
   padding: 20px;
   margin-top: 40px;
 }
