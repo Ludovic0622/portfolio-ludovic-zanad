@@ -2,15 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projets | Portfolio Ludovic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets | Ludovic</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
+
+  <div class="top-bar">
+    <a href="projets-en.html" class="btn-lang">🇬🇧 English</a>
+    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
+  </div>
+
   <header>
     <h1>Mes Projets</h1>
-    <p>Exemples de mes réalisations techniques</p>
+    <p>Exemples de réalisations personnelles & académiques</p>
   </header>
 
   <nav>
@@ -21,22 +27,28 @@
 
   <main>
     <section>
-      <h2>Projets récents</h2>
+      <h2>Applications développées</h2>
       <ul>
         <li>
-          <h3>Application de gestion d’étudiants</h3>
-          <p>App Python avec interface Tkinter, permettant d’ajouter/modifier/exporter des étudiants en CSV.</p>
+          <h3>Gestion d'étudiants</h3>
+          <p>Application Python/Tkinter pour gérer une liste d'étudiants avec export CSV.</p>
         </li>
         <li>
-          <h3>Mini-portfolio statique</h3>
-          <p>Site HTML/CSS responsive hébergé sur GitHub Pages pour présenter mon profil développeur.</p>
+          <h3>Mini-portfolio GitHub</h3>
+          <p>Site responsive en HTML/CSS pour se présenter en ligne.</p>
         </li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ludovic Attypo Zanad</p>
+    <p>&copy; 2025 Ludovic Z.</p>
   </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+}
+  </script>
 </body>
 </html>
