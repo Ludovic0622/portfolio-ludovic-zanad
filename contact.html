@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>Contact</h1>
-    <p>Restons connectés!</p>
+    <p>Restons connectés !</p>
   </header>
 
   <nav>
@@ -22,7 +22,23 @@
   <main>
     <section>
       <h2>Me contacter</h2>
-      <p>Email: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
+      <form action="https://formspree.io/f/xgvybqae" method="POST">
+        <label for="nom">Nom:</label><br />
+        <input type="text" name="nom" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Liens utiles</h2>
+      <p>Email direct: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/Ludovic0622" target="_blank">github.com/Ludovic0622</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/ludovic-attypo-zanad" target="_blank">linkedin.com/in/ludovic-attypo-zanad</a></p>
     </section>
