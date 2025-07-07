@@ -2,19 +2,27 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accueil | Portfolio Ludovic</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
+
+  <!-- Splash screen -->
   <div id="splash">
-  <h1>Ludovic Z.</h1>
-</div>
+    <h1>Bienvenue chez Ludovic</h1>
+  </div>
+
+  <!-- Langue / thème -->
+  <div class="top-bar">
+    <a href="index-en.html" class="btn-lang">🇬🇧 English</a>
+    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
+  </div>
 
   <header>
-    <h1>Ludovic ATTYPO ZANAD</h1>
-    <p>Étudiant en génie logiciel | Développeur web passionné | IA & cybersécurité</p>
+    <h1>Ludovic Attypo Zanad</h1>
+    <p>Développeur web | Étudiant ENSIAS | Passionné d’IA & cybersécurité</p>
   </header>
 
   <nav>
@@ -26,31 +34,35 @@
   <main>
     <section>
       <h2>À propos</h2>
-      <p>Étudiant à l’ENSIAS, je développe des solutions web modernes avec React, Node.js et Python. Je suis également une formation en IA via HarvardX.</p>
+      <p>Je crée des solutions modernes avec React, Node.js, Python et Git. Ce site reflète ma passion pour l’innovation numérique et les technologies open-source.</p>
     </section>
 
     <section>
       <h2>Compétences</h2>
       <ul class="skills">
-        <li>Python</li>
-        <li>JavaScript</li>
         <li>React</li>
-        <li>Node.js</li>
+        <li>Python</li>
+        <li>HTML/CSS</li>
         <li>Git & GitHub</li>
+        <li>Intelligence Artificielle</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ludovic Attypo Zanad</p>
+    <p>&copy; 2025 Ludovic Z. | Tous droits réservés</p>
   </footer>
+
   <script>
-  window.onload = function() {
-    setTimeout(() => {
-      document.getElementById("splash").style.display = "none";
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
 }, 2000);
 };
-</script>
 
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+}
+  </script>
 </body>
 </html>
