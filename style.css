@@ -19,6 +19,12 @@ body {
   background-color: var(--white);
   color: var(--black);
   line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 /* NAVIGATION */
@@ -147,45 +153,23 @@ footer {
   border-top: 3px solid var(--gold);
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 700px) {
-.navbar {
-    flex-direction: column;
-    align-items: flex-start;
+footer a {
+  color: var(--gold);
+  text-decoration: none;
 }
 
-.navbar nav {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+/* Email & Téléphone en blanc */
+.contact-white {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
 }
 
-  #logo {
-    font-size: 1rem;
+.contact-white:hover {
+  color: var(--gold);
+  text-decoration: underline;
 }
 
-.logo-img {
-    width: 30px;
-    height: 30px;
-}
-
-.skills ul {
-    flex-direction: column;
-    align-items: center;
-}
-
-  main {
-    padding: 0 15px;
-}
-}
-body {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-body.loaded {
-  opacity: 1;
-}
 /* 🎉 Animation pulsée (merci.html / thanks.html) */
 .merci-animation {
   text-align: center;
@@ -201,3 +185,57 @@ body.loaded {
   50%  { opacity: 1;   transform: scale(1.1);}
   100% { opacity: 0.4; transform: scale(1);}
 }
+
+/* ✅ Responsive Mobile */
+@media screen and (max-width: 700px) {
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar nav {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-btn {
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+  #logo {
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+}
+
+.skills ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+  main {
+    padding: 0 15px;
+}
+
+.intro p {
+  font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+}
+
+  footer p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+}
+
