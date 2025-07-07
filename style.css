@@ -3,8 +3,10 @@ body {
   margin: 0;
   background-color: #f4f6f8;
   color: #333;
+  line-height: 1.6;
 }
 
+/* === HEADER === */
 header {
   background: linear-gradient(90deg, #007bff, #00c6ff);
   color: white;
@@ -12,6 +14,16 @@ header {
   text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* === NAVIGATION === */
 nav {
   background-color: #eee;
   padding: 10px;
@@ -23,22 +35,26 @@ nav a {
   color: #007bff;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1em;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* === MAIN === */
 main {
   max-width: 900px;
-  margin: auto;
+  margin: auto;
   padding: 20px;
 }
 
 h2 {
   color: #007bff;
+  margin-bottom: 10px;
 }
 
+/* === COMPÉTENCES === */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -55,17 +71,97 @@ h2 {
   color: #004080;
 }
 
+/* === FORMULAIRE DE CONTACT === */
+form {
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #cce5ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  color: #004080;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #f0faff;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* === MESSAGE DE SUCCÈS === */
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* === ANIMATION === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+/* === FOOTER === */
 footer {
   background-color: #ddd;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  font-size: 0.9em;
 }
 
-/* Responsive */
+/* === RESPONSIVE === */
 @media screen and (max-width: 600px) {
 .skills {
     flex-direction: column;
     align-items: center;
+}
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+}
+
+  form {
+    padding: 15px;
+}
+
+  header h1 {
+    font-size: 2em;
 }
 }
