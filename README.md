@@ -1,3 +1,5 @@
+[![Aperçu du site](preview.jpg)](https://ludovic0622.github.io/portfolio-ludovic-zanad)
+
 # 🌐 Portfolio | Ludovic Attypo Zanad
 
 [![GitHub Pages](https://img.shields.io/badge/En%20ligne-GitHub%20Pages-blue?logo=github)](https://ludovic0622.github.io/portfolio-ludovic-zanad)
