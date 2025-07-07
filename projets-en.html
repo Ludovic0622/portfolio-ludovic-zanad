@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Ludovic</title>
+  <title>Projects | Ludovic Z.</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
 
-  <div class="top-bar">
-    <a href="projets.html" class="btn-lang">🇫🇷 Français</a>
-    <button onclick="toggleTheme()" class="btn-theme">🌓</button>  
-  </div>
-
-  <header>
-    <h1>My Projects</h1>
-    <p>Examples of personal and academic work</p>
+  <header class="navbar">
+    <div id="logo">
+      <img src="logo.png.jpg" alt="Ludovic Logo" class="logo-img" />
+      <span>LUDOVIC DEV</span>
+    </div>
+    <nav>
+      <a href="index-en.html" class="nav-btn">Home</a>
+      <a href="projects.html" class="nav-btn">Projects</a>
+      <a href="contact-en.html" class="nav-btn">Contact</a>
+      <a href="projets.html" class="nav-btn">🇫🇷 FR</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index-en.html">Home</a>
-    <a href="projets-en.html">Projects</a>
-    <a href="contact-en.html">Contact</a>
-  </nav>
 
   <main>
     <section>
-      <h2>Applications Built</h2>
-      <ul>
-        <li>
-          <h3>Student Manager App</h3>
-          <p>Python app using Tkinter, allowing export to CSV and basic CRUD features.</p>
-        </li>
-        <li>
-          <h3>Mini GitHub Portfolio</h3>
-          <p>Responsive HTML/CSS site to showcase a developer profile online.</p>
-        </li>
-      </ul>
+      <h1>My Projects</h1>
+
+      <h2>📁 GitHub Portfolio</h2>
+      <p>Responsive showcase site with bilingual content, hosted on GitHub Pages.</p>
+      <p><a href="https://github.com/Ludovic0622/portfolio" target="_blank">View GitHub repository</a></p>
+
+      <h2>🤖 Python Chatbot</h2>
+      <p>Simple terminal chatbot built in Python, using conditionals and loops.</p>
+      <p><a href="projects.html#chatbot">Read the technical article</a></p>
+
+      <h2>📦 Node.js REST API</h2>
+      <p>Express server with secured endpoints, MongoDB handling and user authentication.</p>
+      <p><a href="https://github.com/Ludovic0622/api-node" target="_blank">Explore the project</a></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Ludovic Z.</p>
   </footer>
-
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-}
-  </script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+</script>
+
+
 </body>
 </html>
