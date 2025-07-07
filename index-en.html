@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Ludovic's Portfolio</title>
+  <title>Home | Ludovic Z.</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
 
-  <!-- Splash screen -->
-  <div id="splash">
-    <h1>Welcome to Ludovic’s site</h1>
-  </div>
-
-  <!-- Langue / thème -->
-  <div class="top-bar">
-    <a href="index.html" class="btn-lang">🇫🇷 Français</a> 
-    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
-  </div>
-
-  <header>
-    <h1>Ludovic Attypo Zanad</h1>
-    <p>Web developer | Software engineering student | AI & Cybersecurity enthusiast</p>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div id="logo">
+      <img src="logo.png.jpg" alt="Ludovic Logo" class="logo-img" />
+      <span>LUDOVIC DEV</span>
+    </div>
+    <nav>
+      <a href="index-en.html" class="nav-btn">Home</a>
+      <a href="projects.html" class="nav-btn">Projects</a>
+      <a href="contact-en.html" class="nav-btn">Contact</a>
+      <a href="index.html" class="nav-btn">🇫🇷 FR</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index-en.html">Home</a>
-    <a href="projets.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
+  <!-- Main content -->
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I build modern web solutions using React, Node.js, Python and Git. This site reflects my passion for digital innovation and open-source technologies.</p>
+    <section class="intro">
+      <h1>Ludovic Attypo Zanad</h1>
+      <p>
+        Software engineering student at ENSIAS, passionate about web development, artificial intelligence and cybersecurity.
+        I design modern solutions with React, Python and Node.js, and actively contribute to open-source projects.
+        My goal: to build useful, performant and secure tools.
+      </p>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>React</li>
+    <section class="skills">
+      <h2>💻 Skills</h2>
+      <ul>
+        <li>JavaScript</li>
         <li>Python</li>
-        <li>HTML/CSS</li>
         <li>Git & GitHub</li>
-        <li>Artificial Intelligence</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>Cybersecurity</li>
       </ul>
+    </section>
+
+    <section class="projects">
+      <h2>📁 GitHub Projects</h2>
+      <p>My public projects are here:
+        <a href="https://github.com/Ludovic0622" target="_blank">github.com/Ludovic0622</a>
+      </p>
+    </section>
+
+    <section class="presence">
+  <h2>📲 Social Presence</h2>
+      <p>I post developer tips and projects on TikTok:
+        <a href="https://www.tiktok.com/@ludovic.dev" target="_blank">@ludovic.dev</a>
+      </p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ludovic Z. | All rights reserved</p>
+    <p>&copy; 2025 Ludovic Z. • Bilingual site FR / EN • All rights reserved</p>
   </footer>
-
   <script>
-    window.onload = () => {
-      setTimeout(() => {
-        document.getElementById("splash").style.display = "none";
-}, 2000);
-};
+  window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+</script>
 
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-}
-  </script>
+
 </body>
 </html>
