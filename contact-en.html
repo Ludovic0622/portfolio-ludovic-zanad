@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Language & theme bar -->
   <div class="top-bar">
     <a href="contact.html" class="btn-lang">🇫🇷 Français</a>
     <button onclick="toggleTheme()" class="btn-theme">🌓</button>
@@ -16,7 +17,7 @@
 
   <header>
     <h1>Contact</h1>
-    <p>Let's stay in touch!</p>
+    <p>Got a question or a project? Let's connect!</p>
   </header>
 
   <nav>
@@ -28,15 +29,15 @@
   <main>
     <section>
       <h2>Contact Form</h2>
-      <form action="https://formspree.io/f/xgvybqae" method="POST">
-        <label>Name:</label><br />
-        <input type="text" name="name" required /><br /><br />
+      <form action="https://formspree.io/f/xgvybqae" method="POST" onsubmit="location.href='thanks.html'; return false;">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-        <label>Email:</label><br />
-        <input type="email" name="email" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-        <label>Message:</label><br />
-        <textarea name="message" rows="5" required></textarea><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
 
         <button type="submit">Send</button>
       </form>
