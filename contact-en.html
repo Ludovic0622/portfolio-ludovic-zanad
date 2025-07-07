@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ludovic</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="contact.html" class="btn-lang">🇫🇷 Français</a>
+    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
+  </div>
+
+  <header>
+    <h1>Contact</h1>
+    <p>Let's stay in touch!</p>
+  </header>
+
+  <nav>
+    <a href="index-en.html">Home</a>
+    <a href="projets-en.html">Projects</a>
+    <a href="contact-en.html">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contact Form</h2>
+      <form action="https://formspree.io/f/xgvybqae" method="POST">
+        <label>Name:</label><br />
+        <input type="text" name="name" required /><br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" name="email" required /><br /><br />
+
+        <label>Message:</label><br />
+        <textarea name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Useful Links</h2>
+      <p>Email: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Ludovic0622" target="_blank">github.com/Ludovic0622</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/ludovic-attypo-zanad" target="_blank">linkedin.com/in/ludovic-attypo-zanad</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ludovic Z.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+}
+  </script>
+</body>
+</html>
