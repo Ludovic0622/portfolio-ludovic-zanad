@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ludovic's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
+</head>
+<body>
+
+  <!-- Splash screen -->
+  <div id="splash">
+    <h1>Welcome to Ludovic’s site</h1>
+  </div>
+
+  <!-- Langue / thème -->
+  <div class="top-bar">
+    <a href="index.html" class="btn-lang">🇫🇷 Français</a>
+    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
+  </div>
+
+  <header>
+    <h1>Ludovic Attypo Zanad</h1>
+    <p>Web developer | Software engineering student | AI & Cybersecurity enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="index-en.html">Home</a>
+    <a href="projets.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I build modern web solutions using React, Node.js, Python and Git. This site reflects my passion for digital innovation and open-source technologies.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>React</li>
+        <li>Python</li>
+        <li>HTML/CSS</li>
+        <li>Git & GitHub</li>
+        <li>Artificial Intelligence</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ludovic Z. | All rights reserved</p>
+  </footer>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
+}, 2000);
+};
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+}
+  </script>
+</body>
+</html>
