@@ -1,5 +1,11 @@
 # 🌐 Portfolio | Ludovic Attypo Zanad
 
+[![GitHub Pages](https://img.shields.io/badge/En%20ligne-GitHub%20Pages-blue?logo=github)](https://ludovic0622.github.io/portfolio-ludovic-zanad)
+
+🇬🇧 English version available [here](README.en.md)
+
+---
+
 Bienvenue sur mon **portfolio personnel**, développé avec 💙 **HTML**, **CSS** et **JavaScript**.
 Ce site présente mon profil de développeur, mes compétences techniques, mes projets, et un formulaire de contact fonctionnel.
 
@@ -7,7 +13,7 @@ Ce site présente mon profil de développeur, mes compétences techniques, mes p
 
 ## 🔗 Site en ligne
 
-➡ [Voir le site sur GitHub Pages](https://ludovic0622.github.io/portfolio-ludovic-zanad)
+➡ [Voir sur GitHub Pages](https://ludovic0622.github.io/portfolio-ludovic-zanad)
 
 ---
 
@@ -28,27 +34,27 @@ Je crée des solutions modernes avec:
 | Projet                          | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
 | Gestion d'étudiants (Tkinter)  | Application Python de gestion avec interface graphique et export CSV       |
-| Portfolio statique             | Site vitrine responsive hébergé gratuitement sur GitHub Pages              |
+| Portfolio statique             | Site HTML/CSS responsive hébergé sur GitHub Pages                          |
 
 ---
 
 ## 📬 Me contacter
 
-Formulaire intégré dans la page **Contact**, connecté via [Formspree.io](https://formspree.io)
+Formulaire intégré via [Formspree](https://formspree.io)
 
-- ✉ **Email**: [attypozanadludovic@gmail.com](mailto:attypozanadludovic@gmail.com)
-- 👨‍💻 **GitHub**: [github.com/Ludovic0622](https://github.com/Ludovic0622)
-- 💼 **LinkedIn**: [linkedin.com/in/ludovic-attypo-zanad](https://linkedin.com/in/ludovic-attypo-zanad)
+- ✉ Email: [attypozanadludovic@gmail.com](mailto:attypozanadludovic@gmail.com)
+- 👨‍💻 GitHub: [github.com/Ludovic0622](https://github.com/Ludovic0622)
+- 💼 LinkedIn: [linkedin.com/in/ludovic-attypo-zanad](https://linkedin.com/in/ludovic-attypo-zanad)
 
 ---
 
 ## 🚀 Technologies utilisées
 
 - HTML5 & CSS3
-- JavaScript vanilla
-- Formspree.io (formulaire de contact)
-- GitHub Pages (déploiement gratuit)
+- JavaScript
+- Formspree.io (contact)
+- GitHub Pages (hébergement)
 
 ---
 
-> ✨ Portfolio créé avec passion, curiosité technologique et désir d'évoluer dans le monde du développement 💻
+> ✨ Ce portfolio a été conçu avec passion, curiosité, et envie d’apprendre.
