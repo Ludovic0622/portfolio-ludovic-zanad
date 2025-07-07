@@ -1,56 +1,185 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #0d1117;
+  --accent: #58a6ff;
+  --bg: #f5f7fa;
+  --text: #1a1a1a;
+  --light: #e2e8f0;
+  --dark-bg: #0d1117;
+  --dark-text: #c9d1d9;
+  --dark-accent: #58a6ff;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  transition: background 0.4s, color 0.4s; 
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
+/* Dark mode */
 body.dark {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
 }
 
-/* Splash screen */
-#splash {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: #007bff;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  z-index: 9999;
+a {
+  color: var(--accent);
+  text-decoration: none;
 }
 
-/* Barre langue / thème */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top bar */
 .top-bar {
   position: fixed;
   top: 10px;
   right: 15px;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .btn-lang,.btn-theme {
-  background: #007bff;
-  color: white;
+  background-color: var(--accent);
   border: none;
+  color: white;
   padding: 6px 10px;
-  margin-left: 5px;
+  margin-left: 8px;
   cursor: pointer;
-  text-decoration: none;
+  font-size: 14px;
   border-radius: 6px;
 }
 
-/* Compétences */
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+/* Skills list */
+.skills {
+  padding: 0;
+}
+
 .skills li {
   list-style: none;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-  transition: background 0.3s ease;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f0f2f5;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
 }
 
 .skills li:hover {
-  background-color: #f0f8ff;
+  transform: translateX(5px);
+  background: #e2e8f0;
+}
+
+body.dark.skills li {
+  background: #161b22;
+}
+
+body.dark.skills li:hover {
+  background: #21262d;
+}
+
+/* Contact form */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0072e0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Dark mode elements */
+body.dark nav {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+body.dark nav a {
+  color: var(--dark-text);
+}
+
+body.dark nav a:hover {
+  color: var(--dark-accent);
+}
+
+body.dark form input,
+body.dark form textarea {
+  background: #0d1117;
+  color: #f0f0f0;
+  border: 1px solid #30363d;
 }
