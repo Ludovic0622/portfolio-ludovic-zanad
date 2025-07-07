@@ -10,7 +10,7 @@
 
   <header class="navbar">
     <div id="logo">
-      <img src="logo.png.jpg" alt="Logo Ludovic" class="logo-img" />
+      <img src="logo.png" alt="Logo Ludovic" class="logo-img" />
       <span>LUDOVIC DEV</span>
     </div>
     <nav>
@@ -26,13 +26,18 @@
       <h1>Me contacter</h1>
       <form action="https://formspree.io/f/xgvybqae" method="POST" onsubmit="window.location.href='merci.html'; return false;">
         <label for="nom">Nom:</label><br />
-        <input type="text" id="nom" name="nom" required /><br /><br />
+        <input type="text" id="nom" name="nom" required placeholder="Votre nom"><br /><br />
 
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+        <input type="email" id="email" name="email" required placeholder="votre@email.com"
+               title="Entrez une adresse email valide"><br /><br />
 
         <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <textarea id="message" name="message" rows="5" required placeholder="Tapez votre message ici..."
+                  title="Ce champ est obligatoire"></textarea><br /><br />
+
+        <!-- Anti-spam invisible -->
+        <input type="text" name="_gotcha" style="display:none">
 
         <button type="submit" class="nav-btn">Envoyer</button>
       </form>
@@ -40,16 +45,16 @@
   </main>
 
   <footer>
-  <p>&copy; 2025 Ludovic Z.</p>
-  <p>📧 Email: <a class="contact-white" href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
-  <p>📱 Téléphone: <a class="contact-white" href="tel:‪+221767882963‬">‪+221 76 788 29 63‬</a></p>
-</footer>
-  <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("loaded");
-});
-</script>
+    <p>&copy; 2025 Ludovic Z.</p>
+    <p>📧 Email: <a class="contact-white" href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
+    <p>📱 Téléphone: <a class="contact-white" href="tel:‪+221767882963‬">‪+221 76 788 29 63‬</a></p>
+  </footer>
 
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("loaded");
+});
+  </script>
 
 </body>
 </html>
