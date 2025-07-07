@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Message envoyé | Ludovic</title>
+  <title>Merci | Ludovic Z.</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.jpg" type="image/jpeg" /> 
 </head>
 <body>
 
-  <div class="top-bar">
-    <a href="thanks.html" class="btn-lang">🇬🇧 English</a>
-    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
-  </div>
-
-  <header>
-    <h1>Merci!</h1>
-    <p>Ton message a bien été envoyé 📬</p>
+  <header class="navbar">
+    <div id="logo">
+      <img src="logo.png.jpg" alt="Logo Ludovic" class="logo-img" />
+      <span>LUDOVIC DEV</span>
+    </div>
+    <nav>
+      <a href="index.html" class="nav-btn">Accueil</a>
+      <a href="projets.html" class="nav-btn">Projets</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="thanks.html" class="nav-btn">🇬🇧 EN</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <p>Je te répondrai dès que possible.
-      Tu peux revenir à l’accueil en cliquant ici:</p>
-      <a href="index.html" class="btn-lang">← Retour à l’accueil</a>
+    <section class="intro">
+      <h1>Merci pour ton message! 🙏</h1>
+      <div class="merci-animation">💛 Merci encore!</div>
+      <p>Je te répondrai dans les plus brefs délais.</p>
+      <p><a href="index.html" class="nav-btn">← Retour à l’accueil</a></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Ludovic Z.</p>
+    <p>📧 Email: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
+    <p>📱 Téléphone: <a href="tel:‪+221767882963‬">‪+221 76 788 29 63‬</a></p>
   </footer>
-
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-}
-  </script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+</script>
+
+
 </body>
 </html>
