@@ -1,19 +1,35 @@
-# Portfolio Ludovic Attypo Zanad
+# Portfolio | Ludovic Attypo Zanad
 
-Bienvenue sur mon portfolio personnel codé en HTML et CSS.
+Bienvenue sur mon portfolio personnel, développé en HTML, CSS et un brin de JavaScript 🎨
+Ce site présente mon profil, mes compétences techniques et mes projets récents.
 
-## 👨‍💻 À propos
-Je suis étudiant en 3ᵉ année de génie logiciel à l'ENSIAS, passionné par le développement web, l'intelligence artificielle et la cybersécurité.
+## 🔗 Accès au site
 
-## 📁 Contenu du site
-- `index.html` → page principale du portfolio
-- `style.css` → feuille de style personnalisée
+🌐 [Voir le portfolio en ligne](https://ludovic0622.github.io/portfolio/)
 
-## 🌐 En ligne
-Le site est disponible via GitHub Pages ici: [Lien à venir]
+## 🧠 À propos
 
-## 🚀 Projets à venir
-- Intégration d'une section compétences
-- Design responsive mobile
-- Ajout de projets interactifs hébergés sur GitHub
+Je suis étudiant en génie logiciel à l’ENSIAS, passionné par le développement web, l’intelligence artificielle et la cybersécurité.
+Je construis des solutions modernes avec:
 
+- React.js
+- Node.js
+- Python
+- Git & GitHub
+
+## 💼 Projets présentés
+
+- **Application de gestion d’étudiants** (Python + Tkinter)
+- **Mini portfolio statique** (ce site)
+
+## 📬 Me contacter
+
+Formulaire intégré via [Formspree](https://formspree.io) — vous pouvez m’écrire directement via l’onglet Contact.
+
+- 📧 [attypozanadludovic@gmail.com](mailto:attypozanadludovic@gmail.com)
+- 👨‍💻 [GitHub](https://github.com/Ludovic0622)
+- 💼 [LinkedIn](https://linkedin.com/in/ludovic-attypo-zanad)
+
+---
+
+> Ce portfolio a été conçu avec passion ❤ et volonté de progresser.
