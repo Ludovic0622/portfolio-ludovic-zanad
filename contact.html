@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Ludovic</title>
+  <title>Contact | Ludovic Z.</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.jpg" type="image/jpeg" />
 </head>
 <body>
 
-  <!-- Barre de langue & thème -->
-  <div class="top-bar">
-    <a href="contact-en.html" class="btn-lang">🇬🇧 English</a>
-    <button onclick="toggleTheme()" class="btn-theme">🌓</button>
-  </div>
-
-  <header>
-    <h1>Contact</h1>
-    <p>Une question? Un projet? Parlons-en!</p>
+  <header class="navbar">
+    <div id="logo">
+      <img src="logo.png.jpg" alt="Logo Ludovic" class="logo-img" />
+      <span>LUDOVIC DEV</span>
+    </div>
+    <nav>
+      <a href="index.html" class="nav-btn">Accueil</a>
+      <a href="projets.html" class="nav-btn">Projets</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="contact-en.html" class="nav-btn">🇬🇧 EN</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="projets.html">Projets</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
   <main>
     <section>
-      <h2>Formulaire de contact</h2>
-      <form action="https://formspree.io/f/xgvybqae" method="POST" onsubmit="location.href='merci.html'; return false;">
+      <h1>Me contacter</h1>
+      <form action="https://formspree.io/f/xgvybqae" method="POST" onsubmit="window.location.href='merci.html'; return false;">
         <label for="nom">Nom:</label><br />
         <input type="text" id="nom" name="nom" required /><br /><br />
 
@@ -39,26 +34,22 @@
         <label for="message">Message:</label><br />
         <textarea id="message" name="message" rows="5" required></textarea><br /><br />
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" class="nav-btn">Envoyer</button>
       </form>
-    </section>
-
-    <section>
-      <h2>Mes liens</h2>
-      <p>Email: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Ludovic0622" target="_blank">github.com/Ludovic0622</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/ludovic-attypo-zanad" target="_blank">linkedin.com/in/ludovic-attypo-zanad</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Ludovic Z.</p> 
+    <p>&copy; 2025 Ludovic Z.</p>
+    <p>📧 Email: <a href="mailto:attypozanadludovic@gmail.com">attypozanadludovic@gmail.com</a></p>
+    <p>📱 Téléphone: <a href="tel:‪+221767882963‬">‪+221 76 788 29 63‬</a></p>
   </footer>
-
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-}
-  </script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+</script>
+
+
 </body>
 </html>
